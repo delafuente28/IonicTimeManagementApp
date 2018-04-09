@@ -16,6 +16,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
+  public userName : string = null;
 
   pages: Array<{title: string, component: any}>;
 
@@ -30,7 +31,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       //{ title: 'Login', component: LoginPage },
-      { title: 'Imputaciones', component: ListPage }
+      { title: 'Time', component: ListPage }
 
     ];
 
@@ -44,6 +45,9 @@ export class MyApp {
         if(session)
           {
             this.rootPage = ListPage;
+
+            this.userName = session.email;
+
           }
           else
           {
@@ -65,4 +69,5 @@ export class MyApp {
   {
       this.auth.logout();
   }
+ 
 }
