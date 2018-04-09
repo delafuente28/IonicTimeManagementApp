@@ -31,16 +31,19 @@ export class LoginPage {
   }
 
 
-  onLogin()
+  OnLogin()
   {
-   let alert = this.alertCtrl.create({
-    title: 'Login',
-    subTitle: 'Login successful',
-    buttons: ['ok']
-    });
-    alert.present();
-
-    this.navCtrl.push(ListPage);
+    this.auth.loginUser(this.user.email,this.user.password ).then((user) => 
+    {   }
+    )
+     .catch(err=>{
+      let alert = this.alertCtrl.create({
+        title: 'Error',
+        subTitle: err.message,
+        buttons: ['Aceptar']
+      });
+      alert.present();
+    })
   }
 
     signin()
