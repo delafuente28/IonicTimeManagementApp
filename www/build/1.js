@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 441:
+/***/ 450:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AssignHoursPageModule", function() { return AssignHoursPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DeleteunitPageModule", function() { return DeleteunitPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assign_hours__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__deleteunit__ = __webpack_require__(139);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AssignHoursPageModule = /** @class */ (function () {
-    function AssignHoursPageModule() {
+var DeleteunitPageModule = /** @class */ (function () {
+    function DeleteunitPageModule() {
     }
-    AssignHoursPageModule = __decorate([
+    DeleteunitPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__assign_hours__["a" /* AssignHoursPage */],
+                __WEBPACK_IMPORTED_MODULE_2__deleteunit__["a" /* DeleteunitPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__assign_hours__["a" /* AssignHoursPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__deleteunit__["a" /* DeleteunitPage */]),
             ],
         })
-    ], AssignHoursPageModule);
-    return AssignHoursPageModule;
+    ], DeleteunitPageModule);
+    return DeleteunitPageModule;
 }());
 
-//# sourceMappingURL=assign-hours.module.js.map
+//# sourceMappingURL=deleteunit.module.js.map
 
 /***/ })
 
