@@ -1,4 +1,4 @@
-webpackJsonp([5],{
+webpackJsonp([6],{
 
 /***/ 137:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,10 +6,10 @@ webpackJsonp([5],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddProjectPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_project_service__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_unit_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_list__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_list__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_database__ = __webpack_require__(33);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -79,7 +79,7 @@ var AddProjectPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AssignHoursPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_unit_service__ = __webpack_require__(44);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
@@ -128,7 +128,7 @@ var AssignHoursPage = /** @class */ (function () {
     };
     AssignHoursPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-assign-hours',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/assign-hours/assign-hours.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Assign Hours</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <form (ngSubmit)="OnAdd(f.value)" #f="ngForm">\n\n        <ion-list>\n            <ion-item>\n\n                <ion-label color="primary">Unit:</ion-label>\n\n                <ion-select name="units" [(ngModel)]="units" multiple="false">\n\n                    <ion-option *ngFor="let item of units$ | async">\n\n                        {{item.name}}\n\n                    </ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n\n          \n\n                  <!--\n\n            <ion-item>\n\n                <ion-label color="primary">Project:</ion-label>\n\n                <ion-select [(ngModel)]="projects" multiple="false">\n\n                    <ion-option>Project 1</ion-option>\n\n                    <ion-option>Project 2</ion-option>\n\n                    <ion-option>Project 3</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n\n\n            <ion-item>\n\n                <ion-label color="primary">Hours:</ion-label>\n\n                <ion-input placeholder="Hours"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Minutes:</ion-label>\n\n                <ion-input placeholder="Minutes"></ion-input>\n\n            </ion-item> -->\n                  \n\n        </ion-list>\n\n\n        <button ion-button block type="submit" [disabled]="!f.valid">Aceptar</button>\n\n    </form>\n\n\n\n\n        <!--<button ion-button full (click)="OnAdd()">Add Time</button>-->\n\n</ion-content>\n'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/assign-hours/assign-hours.html"*/,
+            selector: 'page-assign-hours',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/assign-hours/assign-hours.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Assign Time</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <form (ngSubmit)="OnAdd(f.value)" #f="ngForm">\n\n        <ion-list>\n            <ion-item>\n\n                <ion-label color="primary">Unit:</ion-label>\n\n                <ion-select name="units" [(ngModel)]="units" multiple="false">\n\n                    <ion-option *ngFor="let item of units$ | async">\n\n                        {{item.name}}\n\n                    </ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n\n            <ion-item>\n\n                <ion-label color="primary">Project:</ion-label>\n\n                <ion-select  multiple="false">\n\n                    <ion-option>Project 1</ion-option>\n\n                    <ion-option>Project 2</ion-option>\n\n                    <ion-option>Project 3</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n\n\n            <ion-item>\n\n                <ion-label color="primary">Hours:</ion-label>\n\n                <ion-input placeholder="Hours"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Minutes:</ion-label>\n\n                <ion-input placeholder="Minutes"></ion-input>\n\n            </ion-item> \n                  \n\n        </ion-list>\n\n\n        <button ion-button block type="submit" [disabled]="!f.valid">Add Time</button>\n\n    </form>\n</ion-content>'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/assign-hours/assign-hours.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
@@ -146,10 +146,11 @@ var AssignHoursPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeleteunitPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnitPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_unit_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(59);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -162,32 +163,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var DeleteunitPage = /** @class */ (function () {
-    function DeleteunitPage(navCtrl, navParams, UnitService) {
+
+
+var UnitPage = /** @class */ (function () {
+    function UnitPage(navCtrl, navParams, alertCtrl, UnitService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
         this.UnitService = UnitService;
-        this.unitSelected = this.navParams.data;
+        this.unit = this.navParams.data;
     }
-    DeleteunitPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DeleteunitPage');
+    UnitPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad UnitPage');
     };
-    DeleteunitPage.prototype.OnRemoveUnit = function (value) {
+    UnitPage.prototype.OnRemoveUnit = function (value) {
         this.UnitService.removeUnit(value);
         this.navCtrl.pop();
     };
-    DeleteunitPage = __decorate([
+    UnitPage.prototype.OnUpdateUnit = function (value) {
+        this.UnitService.updateUnit(value);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__list_list__["a" /* ListPage */]);
+    };
+    UnitPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-deleteunit',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/deleteunit/deleteunit.html"*/'<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n    <ion-title>Delete Unit</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n        <ion-list>\n            \n\n            <ion-item>\n\n                <ion-label color="primary">Unit:</ion-label>\n\n                <ion-input type="text" [(ngModel)]="unitSelected.name" name="name"></ion-input>\n\n            </ion-item>\n\n            <!--<ion-item>\n\n                <ion-label color="primary">Unit:</ion-label>\n\n                <ion-select name="projects" [(ngModel)]="projects" multiple="false">\n\n                    <ion-option *ngFor="let item of units$ | async">\n\n                        {{item.name}}\n\n                    </ion-option>\n\n                </ion-select>\n\n            </ion-item>-->\n\n\n        </ion-list>\n\n\n        <button ion-button block (click)="OnRemoveUnit($event, unitSelected)">Delete</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/deleteunit/deleteunit.html"*/,
+            selector: 'page-unit',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/unit/unit.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>{{unit.name}}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <div align="right">\n\n        <button ion-button icon-only (click)="OnUpdateUnit($event, unit)">\n\n            <ion-icon name="checkmark-circle-outline"></ion-icon>\n\n        </button>\n\n        <button ion-button icon-only (click)="OnRemoveUnit($event, unit)">\n\n            <ion-icon name="trash"></ion-icon>\n\n        </button>\n\n    </div>\n\n    <ion-list>\n\n\n\n        <ion-item>\n\n            <ion-label color="primary">Unit:</ion-label>\n\n            <ion-input type="text" [(ngModel)]="unit.name" name="name" ngModel required></ion-input>\n\n        </ion-item>\n\n        <!--<ion-item>\n\n            <ion-label color="primary">Unit:</ion-label>\n\n            <ion-select name="projects" [(ngModel)]="projects" multiple="false">\n\n                <ion-option *ngFor="let item of units$ | async">\n\n                    {{item.name}}\n\n                </ion-option>\n\n            </ion-select>\n\n        </ion-item>-->\n\n    </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/unit/unit.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
             __WEBPACK_IMPORTED_MODULE_2__services_unit_service__["a" /* UnitService */]])
-    ], DeleteunitPage);
-    return DeleteunitPage;
+    ], UnitPage);
+    return UnitPage;
 }());
 
-//# sourceMappingURL=deleteunit.js.map
+//# sourceMappingURL=unit.js.map
 
 /***/ }),
 
@@ -197,9 +206,9 @@ var DeleteunitPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddUnitPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_unit_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_list__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -230,7 +239,7 @@ var AddUnitPage = /** @class */ (function () {
     };
     AddUnitPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-add-unit',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/add-unit/add-unit.html"*/'<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n    <ion-title>Add Unit</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <form (ngSubmit)="OnAddUnit(f.value)" #f="ngForm">\n        <ion-label color="primary">Unit:</ion-label>\n        <ion-input name="name" [(ngModel)]="units" placeholder="Unit"></ion-input>\n\n        <button ion-button block type="submit" [disabled]="!f.valid">Aceptar</button>\n    </form>\n</ion-content>\n'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/add-unit/add-unit.html"*/,
+            selector: 'page-add-unit',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/add-unit/add-unit.html"*/'<ion-header>\n\n  <ion-navbar>\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n    <ion-title>Add Unit</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <form (ngSubmit)="OnAddUnit(f.value)" #f="ngForm">\n        <ion-list>\n            <ion-item>\n\n                <ion-label color="primary">Unit:</ion-label>\n\n                <ion-input name="name" [(ngModel)]="units" placeholder="Unit"></ion-input>\n\n            </ion-item>\n\n        </ion-list>\n        <button ion-button block type="submit" [disabled]="!f.valid">Aceptar</button>\n    </form>\n</ion-content>\n'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/add-unit/add-unit.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
@@ -267,23 +276,27 @@ webpackEmptyAsyncContext.id = 151;
 var map = {
 	"../pages/add-project/add-project.module": [
 		447,
-		4
+		5
 	],
 	"../pages/add-unit/add-unit.module": [
 		448,
-		3
+		4
 	],
 	"../pages/assign-hours/assign-hours.module": [
 		449,
-		2
-	],
-	"../pages/deleteunit/deleteunit.module": [
-		450,
-		1
+		3
 	],
 	"../pages/login/login.module": [
+		450,
+		2
+	],
+	"../pages/project/project.module": [
 		451,
 		0
+	],
+	"../pages/unit/unit.module": [
+		452,
+		1
 	]
 };
 function webpackAsyncContext(req) {
@@ -354,7 +367,7 @@ var ProjectService = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -410,18 +423,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2_auth__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(437);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(288);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_list_list__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_list_list__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_assign_hours_assign_hours__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_add_unit_add_unit__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_add_project_add_project__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_deleteunit_deleteunit__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_unit_unit__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_auth_auth__ = __webpack_require__(74);
@@ -475,7 +488,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_10__pages_assign_hours_assign_hours__["a" /* AssignHoursPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_add_unit_add_unit__["a" /* AddUnitPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_add_project_add_project__["a" /* AddProjectPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_deleteunit_deleteunit__["a" /* DeleteunitPage */]
+                __WEBPACK_IMPORTED_MODULE_13__pages_unit_unit__["a" /* UnitPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -484,8 +497,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/add-project/add-project.module#AddProjectPageModule', name: 'AddProjectPage', segment: 'add-project', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/add-unit/add-unit.module#AddUnitPageModule', name: 'AddUnitPage', segment: 'add-unit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/assign-hours/assign-hours.module#AssignHoursPageModule', name: 'AssignHoursPage', segment: 'assign-hours', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/deleteunit/deleteunit.module#DeleteunitPageModule', name: 'DeleteunitPage', segment: 'deleteunit', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/project/project.module#ProjectPageModule', name: 'ProjectPage', segment: 'project', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/unit/unit.module#UnitPageModule', name: 'UnitPage', segment: 'unit', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_3_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseConfig),
@@ -501,7 +515,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_10__pages_assign_hours_assign_hours__["a" /* AssignHoursPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_add_unit_add_unit__["a" /* AddUnitPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_add_project_add_project__["a" /* AddProjectPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_deleteunit_deleteunit__["a" /* DeleteunitPage */]
+                __WEBPACK_IMPORTED_MODULE_13__pages_unit_unit__["a" /* UnitPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__["a" /* StatusBar */],
@@ -527,13 +541,13 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(288);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_add_unit_add_unit__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_add_project_add_project__ = __webpack_require__(137);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -563,6 +577,7 @@ var MyApp = /** @class */ (function () {
         this.auth = auth;
         this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */];
         this.userName = null;
+        this.hideLogout = null;
         this.initializeApp();
         this.pages = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */] },
@@ -577,9 +592,11 @@ var MyApp = /** @class */ (function () {
             _this.auth.Session.subscribe(function (session) {
                 if (session) {
                     _this.rootPage = __WEBPACK_IMPORTED_MODULE_7__pages_list_list__["a" /* ListPage */];
+                    _this.hideLogout = false;
                     _this.userName = session.email;
                 }
                 else {
+                    _this.hideLogout = true;
                     _this.rootPage = __WEBPACK_IMPORTED_MODULE_6__pages_login_login__["a" /* LoginPage */];
                 }
             });
@@ -592,13 +609,14 @@ var MyApp = /** @class */ (function () {
     };
     MyApp.prototype.CloseSession = function () {
         this.auth.logout();
+        this.hideLogout = true;
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <h3 align="center">{{userName}}</h3>\n     \n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n      <button menuClose ion-item (click)="CloseSession()">\n\n            Logout\n\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <h3 align="center">{{userName}}</h3>\n     \n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n      <button menuClose [hidden]="hideLogout" ion-item (click)="CloseSession()">\n\n            Logout\n\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
@@ -633,7 +651,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var UnitService = /** @class */ (function () {
     function UnitService(db) {
         this.db = db;
-        this.unitsRef = this.db.list('unit');
+        this.unitsRef = this.db.list('Units');
     }
     UnitService.prototype.addUnit = function (value) {
         return this.unitsRef.push(value);
@@ -704,15 +722,15 @@ var TimeService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 73:
+/***/ 59:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__assign_hours_assign_hours__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__deleteunit_deleteunit__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__unit_unit__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_unit_service__ = __webpack_require__(44);
@@ -757,7 +775,7 @@ var ListPage = /** @class */ (function () {
         });
     };
     ListPage.prototype.itemTapped = function ($event, unit) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__deleteunit_deleteunit__["a" /* DeleteunitPage */], unit);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__unit_unit__["a" /* UnitPage */], unit);
     };
     ListPage.prototype.onAssignHours = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__assign_hours_assign_hours__["a" /* AssignHoursPage */]);
@@ -849,7 +867,7 @@ var AuthProvider = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_auth__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

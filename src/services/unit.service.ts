@@ -3,11 +3,13 @@ import { AngularFireDatabase } from "angularfire2/database";
 import { unit } from "../model/units.model";
 
 @Injectable()
-export class UnitService{
+export class UnitService
+{
 
-    private unitsRef=this.db.list<unit>('unit');
+    private unitsRef = this.db.list<unit>('Units');
 
-    constructor(private db:AngularFireDatabase){
+    constructor(private db:AngularFireDatabase)
+    {
 
     }
 
@@ -22,8 +24,7 @@ export class UnitService{
     }
 
     removeUnit(value: unit)
-    {
-        
+    {        
         return this.unitsRef.remove(value.key);
     }
 

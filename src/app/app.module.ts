@@ -13,7 +13,7 @@ import { ListPage } from '../pages/list/list';
 import { AssignHoursPage } from '../pages/assign-hours/assign-hours';
 import { AddUnitPage } from '../pages/add-unit/add-unit'
 import { AddProjectPage } from '../pages/add-project/add-project'
-import { DeleteunitPage } from '../pages/deleteunit/deleteunit';
+import { UnitPage } from '../pages/unit/unit';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,7 +42,7 @@ export const firebaseConfig = {
     AssignHoursPage,
     AddUnitPage,
     AddProjectPage,
-    DeleteunitPage
+    UnitPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +60,7 @@ export const firebaseConfig = {
     AssignHoursPage,
     AddUnitPage,
     AddProjectPage,
-    DeleteunitPage
+    UnitPage
   ],
   providers: [
     StatusBar,

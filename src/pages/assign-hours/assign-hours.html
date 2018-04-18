@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Assign Hours</ion-title>
+    <ion-title>Assign Time</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,13 +19,9 @@
                 </ion-select>
             </ion-item>
 
-          
-
-                  <!--
-
             <ion-item>
                 <ion-label color="primary">Project:</ion-label>
-                <ion-select [(ngModel)]="projects" multiple="false">
+                <ion-select  multiple="false">
                     <ion-option>Project 1</ion-option>
                     <ion-option>Project 2</ion-option>
                     <ion-option>Project 3</ion-option>
@@ -39,15 +35,11 @@
             <ion-item>
                 <ion-label color="primary">Minutes:</ion-label>
                 <ion-input placeholder="Minutes"></ion-input>
-            </ion-item> -->
+            </ion-item> 
                   
         </ion-list>
 
 
-        <button ion-button block type="submit" [disabled]="!f.valid">Aceptar</button>
+        <button ion-button block type="submit" [disabled]="!f.valid">Add Time</button>
     </form>
-
-
-
-        <!--<button ion-button full (click)="OnAdd()">Add Time</button>-->
 </ion-content>

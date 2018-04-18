@@ -19,6 +19,7 @@ export class MyApp {
 
   rootPage: any = HomePage;
   public userName : string = null;
+  hideLogout: boolean = null;
 
   pages: Array<{title: string, component: any}>;
 
@@ -47,12 +48,13 @@ export class MyApp {
         if(session)
           {
             this.rootPage = ListPage;
-
+            this.hideLogout = false;
             this.userName = session.email;
 
           }
           else
           {
+            this.hideLogout = true;
             this.rootPage = LoginPage;
           }
       });
@@ -70,6 +72,7 @@ export class MyApp {
   CloseSession()
   {
       this.auth.logout();
+      this.hideLogout = true;
   }
  
 }
