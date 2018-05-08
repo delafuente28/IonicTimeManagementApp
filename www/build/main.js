@@ -377,59 +377,10 @@ var DashboardPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VerRegistroPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_register_service__ = __webpack_require__(82);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var VerRegistroPage = /** @class */ (function () {
-    function VerRegistroPage(navCtrl, navParams, contactService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.contactService = contactService;
-        this.contact = this.navParams.data;
-        console.log(this.contact.key);
-    }
-    VerRegistroPage.prototype.onUpdateContact = function (value) {
-        this.contactService.updateContact(value);
-        this.navCtrl.pop();
-    };
-    VerRegistroPage.prototype.onRemoveContact = function (value) {
-        this.contactService.removeContact(value);
-        this.navCtrl.pop();
-    };
-    VerRegistroPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ver-registro',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/ver-registro/ver-registro.html"*/'<ion-header>\n    <ion-navbar color="primary">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>Registro Actual</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n\n<ion-content padding>\n\n            <ion-item>\n              <ion-label>Proyecto</ion-label>\n              <ion-select disabled="true" type="ion-select" [(ngModel)]="contact.proyecto" name="proyecto" ngModel required>\n                \n                  <ion-option>Proyecto 1 unidad 1</ion-option>\n                  <ion-option>Proyecto 2 unidad 1</ion-option>\n                  <ion-option>Proyecto 3 unidad 1</ion-option>\n                \n                  <ion-option>Proyecto 1 unidad 2</ion-option>\n                  <ion-option>Proyecto 2 unidad 2</ion-option>\n                  <ion-option>Proyecto 3 unidad 2</ion-option>\n                \n                  <ion-option>Proyecto 1 unidad 3</ion-option>\n                  <ion-option>Proyecto 2 unidad 3</ion-option>\n                  <ion-option>Proyecto 3 unidad 3</ion-option>\n                \n              </ion-select>\n              \n            </ion-item>\n        \n            <ion-item>\n                <ion-label>Horas</ion-label>\n                <ion-input type="number" disabled="true" [(ngModel)]="contact.horas" min="0" max="8"name="horas" ngModel></ion-input>\n            </ion-item>\n\n            <ion-item>\n              <ion-label>Minutos</ion-label>\n              <ion-input type="number" disabled="true" [(ngModel)]="contact.minutos" min="0" max="59" name="minutos" ngModel></ion-input>\n            </ion-item>\n\n            <ion-item>\n                <ion-label>Fecha</ion-label>\n                <ion-datetime displayFormat="YYYY-MM-DD" disabled="true" [(ngModel)]="contact.fecha" name="fecha" ngModel></ion-datetime>\n              </ion-item>\n\n\n    <!-- (ionChange)="onUpdateContact(contact)" -->\n\n    <ion-item>\n            <ion-label>Válido: </ion-label>\n            <ion-checkbox item-right type="boolean" [(ngModel)]="contact.valid" ngModel name="valid"></ion-checkbox>\n\n    </ion-item>\n\n         <button ion-button block (click)="onUpdateContact(contact)">Modificar Registro</button>\n\n         <button ion-button block (click)="onRemoveContact(contact)">Eliminar Registro</button>\n \n\n</ion-content>\n'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/ver-registro/ver-registro.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__services_register_service__["a" /* RegisterService */]])
-    ], VerRegistroPage);
-    return VerRegistroPage;
-}());
-
-//# sourceMappingURL=ver-registro.js.map
-
-/***/ }),
-
-/***/ 154:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VerHorasExtraPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_todo_service__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_todo_service__ = __webpack_require__(82);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -468,6 +419,55 @@ var VerHorasExtraPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=ver-horas-extra.js.map
+
+/***/ }),
+
+/***/ 154:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VerRegistroPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_register_service__ = __webpack_require__(83);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var VerRegistroPage = /** @class */ (function () {
+    function VerRegistroPage(navCtrl, navParams, contactService) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.contactService = contactService;
+        this.contact = this.navParams.data;
+        console.log(this.contact.key);
+    }
+    VerRegistroPage.prototype.onUpdateContact = function (value) {
+        this.contactService.updateContact(value);
+        this.navCtrl.pop();
+    };
+    VerRegistroPage.prototype.onRemoveContact = function (value) {
+        this.contactService.removeContact(value);
+        this.navCtrl.pop();
+    };
+    VerRegistroPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-ver-registro',template:/*ion-inline-start:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/ver-registro/ver-registro.html"*/'<ion-header>\n    <ion-navbar color="primary">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>Registro Actual</ion-title>\n    </ion-navbar>\n  </ion-header>\n\n\n<ion-content padding>\n\n            <ion-item>\n              <ion-label>Proyecto</ion-label>\n              <ion-select disabled="true" type="ion-select" [(ngModel)]="contact.proyecto" name="proyecto" ngModel required>\n                \n                  <ion-option>Proyecto 1 unidad 1</ion-option>\n                  <ion-option>Proyecto 2 unidad 1</ion-option>\n                  <ion-option>Proyecto 3 unidad 1</ion-option>\n                \n                  <ion-option>Proyecto 1 unidad 2</ion-option>\n                  <ion-option>Proyecto 2 unidad 2</ion-option>\n                  <ion-option>Proyecto 3 unidad 2</ion-option>\n                \n                  <ion-option>Proyecto 1 unidad 3</ion-option>\n                  <ion-option>Proyecto 2 unidad 3</ion-option>\n                  <ion-option>Proyecto 3 unidad 3</ion-option>\n                \n              </ion-select>\n              \n            </ion-item>\n        \n            <ion-item>\n                <ion-label>Horas</ion-label>\n                <ion-input type="number" disabled="true" [(ngModel)]="contact.horas" min="0" max="8"name="horas" ngModel></ion-input>\n            </ion-item>\n\n            <ion-item>\n              <ion-label>Minutos</ion-label>\n              <ion-input type="number" disabled="true" [(ngModel)]="contact.minutos" min="0" max="59" name="minutos" ngModel></ion-input>\n            </ion-item>\n\n            <ion-item>\n                <ion-label>Fecha</ion-label>\n                <ion-datetime displayFormat="YYYY-MM-DD" disabled="true" [(ngModel)]="contact.fecha" name="fecha" ngModel></ion-datetime>\n              </ion-item>\n\n\n    <!-- (ionChange)="onUpdateContact(contact)" -->\n\n    <ion-item>\n            <ion-label>Válido: </ion-label>\n            <ion-checkbox item-right type="boolean" [(ngModel)]="contact.valid" ngModel name="valid"></ion-checkbox>\n\n    </ion-item>\n\n         <button ion-button block (click)="onUpdateContact(contact)">Modificar Registro</button>\n\n         <button ion-button block (click)="onRemoveContact(contact)">Eliminar Registro</button>\n \n\n</ion-content>\n'/*ion-inline-end:"/Users/JoseAntonioDeLaFuenteBrando/Documents/GitHub/IonicTimeManagementApp/src/pages/ver-registro/ver-registro.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__services_register_service__["a" /* RegisterService */]])
+    ], VerRegistroPage);
+    return VerRegistroPage;
+}());
+
+//# sourceMappingURL=ver-registro.js.map
 
 /***/ }),
 
@@ -517,11 +517,11 @@ var map = {
 		5
 	],
 	"../pages/ver-horas-extra/ver-horas-extra.module": [
-		643,
+		642,
 		4
 	],
 	"../pages/ver-registro/ver-registro.module": [
-		642,
+		643,
 		3
 	],
 	"../pages/verproyectos/verproyectos.module": [
@@ -558,8 +558,8 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_todo_service__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_register_service__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_todo_service__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_register_service__ = __webpack_require__(83);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -623,10 +623,10 @@ var HomePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_unit_service__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_todo_service__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_register_service__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_ver_registro_ver_registro__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_ver_horas_extra_ver_horas_extra__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_todo_service__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_register_service__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_ver_registro_ver_registro__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_ver_horas_extra_ver_horas_extra__ = __webpack_require__(153);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -762,8 +762,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_admin_admin__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_add_unit_add_unit__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_add_project_add_project__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_ver_registro_ver_registro__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_ver_horas_extra_ver_horas_extra__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_ver_registro_ver_registro__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_ver_horas_extra_ver_horas_extra__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_verunidades_verunidades__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_verproyectos_verproyectos__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_dashboard_dashboard__ = __webpack_require__(152);
@@ -772,8 +772,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_auth_auth__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_unit_service__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_project_service__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_todo_service__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_register_service__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_todo_service__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_register_service__ = __webpack_require__(83);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -851,8 +851,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/assign-hours/assign-hours.module#AssignHoursPageModule', name: 'AssignHoursPage', segment: 'assign-hours', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ver-registro/ver-registro.module#VerRegistroPageModule', name: 'VerRegistroPage', segment: 'ver-registro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ver-horas-extra/ver-horas-extra.module#VerTodoPageModule', name: 'VerHorasExtraPage', segment: 'ver-horas-extra', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ver-registro/ver-registro.module#VerRegistroPageModule', name: 'VerRegistroPage', segment: 'ver-registro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/verproyectos/verproyectos.module#VerproyectosPageModule', name: 'VerproyectosPage', segment: 'verproyectos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/verunidades/verunidades.module#VerunidadesPageModule', name: 'VerunidadesPage', segment: 'verunidades', priority: 'low', defaultHistory: [] }
                     ]
@@ -1377,6 +1377,58 @@ var AuthProvider = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TodoService = /** @class */ (function () {
+    function TodoService(db) {
+        this.db = db;
+    }
+    TodoService.prototype.recibirmail = function (value) {
+        this.mail = value;
+        var split = this.mail.split('@', 2);
+        this.tabla = split[0];
+        //console.log(this.tabla);
+        this.tareasRef = this.db.list(this.tabla + '/Horas Extra');
+    };
+    TodoService.prototype.addTarea = function (value) {
+        return this.tareasRef.push(value);
+    };
+    TodoService.prototype.updateTarea = function (value) {
+        return this.tareasRef.update(value.key, value);
+    };
+    TodoService.prototype.removeTarea = function (value) {
+        return this.tareasRef.remove(value.key);
+    };
+    TodoService.prototype.getTarea = function () {
+        return this.tareasRef;
+    };
+    TodoService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
+    ], TodoService);
+    return TodoService;
+}());
+
+//# sourceMappingURL=todo.service.js.map
+
+/***/ }),
+
+/***/ 83:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__ = __webpack_require__(31);
@@ -1425,58 +1477,6 @@ var RegisterService = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=register.service.js.map
-
-/***/ }),
-
-/***/ 83:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__ = __webpack_require__(31);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var TodoService = /** @class */ (function () {
-    function TodoService(db) {
-        this.db = db;
-    }
-    TodoService.prototype.recibirmail = function (value) {
-        this.mail = value;
-        var split = this.mail.split('@', 2);
-        this.tabla = split[0];
-        //console.log(this.tabla);
-        this.tareasRef = this.db.list(this.tabla + '/Horas Extra');
-    };
-    TodoService.prototype.addTarea = function (value) {
-        return this.tareasRef.push(value);
-    };
-    TodoService.prototype.updateTarea = function (value) {
-        return this.tareasRef.update(value.key, value);
-    };
-    TodoService.prototype.removeTarea = function (value) {
-        return this.tareasRef.remove(value.key);
-    };
-    TodoService.prototype.getTarea = function () {
-        return this.tareasRef;
-    };
-    TodoService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
-    ], TodoService);
-    return TodoService;
-}());
-
-//# sourceMappingURL=todo.service.js.map
 
 /***/ }),
 
