@@ -1,13 +1,11 @@
 import { Select} from "ionic-angular";
 import { DateTimeData } from "ionic-angular/util/datetime-util";
 
-export interface UserModel 
-{
+export interface RelUnitEmpl {
+
     key?: string;
-    email: string;
-    password: string;
-    nombre: string;
+    unidad: Select;
+    empleado: Select;
     fechadesde: DateTimeData;
     fechahasta: DateTimeData;
-    unidad: string;
 }
