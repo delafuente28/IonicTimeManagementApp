@@ -9,7 +9,7 @@ import { ListPage } from '../list/list';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { AlertController } from 'ionic-angular';
 import { RelUnitEmplService } from '../../services/relunitempl.service';
-import { RelUnitProj } from '../../model/relunitproj.model';
+import { RelUnitProj } from '../../model/relunitproject.model';
 
 
 @IonicPage()

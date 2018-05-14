@@ -3,7 +3,7 @@ import { AngularFireDatabase } from "angularfire2/database";
 import { RelUnitEmpl } from "../model/relunitempl.model";
 import { Registro } from "../model/registro.model";
 import { Observable } from "rxjs/Observable";
-import { RelUnitProj } from "../model/relunitproj.model";
+import { RelUnitProj } from "../model/relunitproject.model";
 
 
 @Injectable()
